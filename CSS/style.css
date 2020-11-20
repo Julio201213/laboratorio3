@@ -1,0 +1,59 @@
+*{
+    font-family: 'Roboto', sans-serif;/* font-family: para escoger el tipo de letra de nuestra pagina web; */
+    padding:0; /* padding: para dar relleno */
+    margin:0; /* margin: para darle margen al elemento seleccionado */
+    border:0 /* border: para dar un borde al elemento seleccionado */
+}
+header{
+    background-color: #fc7d1c; /* background-color para darle color al fondo del elemento seleccionado */
+}
+#header-logo{
+    width:64px; /* width para dar un ancho a un elemento*/
+    height:64px; /* height para darle el alto a un elemento*/
+}
+
+#header-msg{
+    font-size: 25px; /* font-size tamaño de la fuente */
+    color: white; /* color: para darle color al elemento */
+}
+#btnOne{
+    background-color:#fc7d1c;
+    color:white;
+}
+#btnOne:focus,#btnOne:hover{
+    box-shadow: none;
+    outline:none;/*autline para darle un contorno al elemento0*/
+}
+
+#tableHead{
+    background-color:#fc7d1c;
+}
+#searchInput{
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border-bottom: 1px solid #1984bc;
+}
+#searchInput:hover,#searchInput:focus{
+    box-shadow: none;
+    outline:none;
+}
+
+body::before {
+    content: ''; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.5),
+        rgba(131, 131, 173, 0.5)
+      ),
+      url(https://as01.epimg.net/colombia/imagenes/2020/08/21/actualidad/1598040700_184330_1598040929_noticia_normal_recorte1.jpg);
+    background-size: cover; /*background-size para el tamaño del elemento*/
+    background-repeat: no-repeat;/* para no repetir o no repetir un background*/
+    background-position: center; /*background-position para seleccionar la posicion del background*/
+  }
